@@ -14,3 +14,7 @@ data_validation:
   STATUS_FILE: artifacts/data_validation/status.txt
   preprocessed_data_csv: artifacts/data_validation/preprocessed_data.csv 
 
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  data_path: artifacts/data_validation/preprocessed_data.csv  
