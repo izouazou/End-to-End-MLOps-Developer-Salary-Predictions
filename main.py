@@ -1,5 +1,7 @@
 from mlProject.custom_logger import logger
 from mlProject.pipeline.stage01_data_ingestion import DataIngestionTrainingPipeline
+from mlProject.pipeline.stage02_data_validation import DataValidationTrainingPipeline
+
 
 
 def run_training_pipeline(stage_name, pipeline_class):
@@ -13,5 +15,7 @@ def run_training_pipeline(stage_name, pipeline_class):
         raise e
 
 run_training_pipeline("Data Ingestion stage", DataIngestionTrainingPipeline)
+run_training_pipeline("Data Validation stage", DataValidationTrainingPipeline)
+
 
 

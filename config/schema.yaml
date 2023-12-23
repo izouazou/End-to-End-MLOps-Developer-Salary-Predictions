@@ -1,1 +1,14 @@
-key: val
+
+COLUMNS:
+  Country: object
+  Age: object
+  EdLevel: object
+  RemoteWork: object
+  DevType: object
+  OrgSize: object
+  YearsCodePro: float64
+  Salary: float64
+
+
+TARGET_COLUMN:
+  name: Salary

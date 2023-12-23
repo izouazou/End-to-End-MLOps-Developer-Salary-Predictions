@@ -6,3 +6,11 @@ data_ingestion:
   source_URL: https://cdn.stackoverflow.co/files/jo7n4k8s/production/49915bfd46d0902c3564fd9a06b509d08a20488c.zip
   local_data_file: artifacts/data_ingestion/data.zip
   unzip_dir: artifacts/data_ingestion
+
+
+data_validation:
+  root_dir: artifacts/data_validation
+  unzip_data_dir: artifacts/data_ingestion/survey_results_public.csv
+  STATUS_FILE: artifacts/data_validation/status.txt
+  preprocessed_data_csv: artifacts/data_validation/preprocessed_data.csv 
+
