@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salary Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    
+    <form method="post" action="/predict">
+        <h1>Annual Salary Prediction</h1>
+        <label for="Country">Country:</label>
+        <select name="Country" required>
+            <option value="United States of America">United States of America</option>
+            <option value="United Kingdom of Great Britain and Northern Ireland">United Kingdom of Great Britain and Northern Ireland</option>
+            <option value="Finland">Finland</option>
+            <option value="Australia">Australia</option>
+            <option value="Netherlands">Netherlands</option>
+            <option value="Germany">Germany</option>
+            <option value="Sweden">Sweden</option>
+            <option value="France">France</option>
+            <option value="Spain">Spain</option>
+            <option value="Brazil">Brazil</option>
+            <option value="Portugal">Portugal</option>
+            <option value="Italy">Italy</option>
+            <option value="Bangladesh">Bangladesh</option>
+            <option value="Canada">Canada</option>
+            <option value="Argentina">Argentina</option>
+            <option value="Switzerland">Switzerland</option>
+            <option value="Sri Lanka">Sri Lanka</option>
+            <option value="Lithuania">Lithuania</option>
+            <option value="India">India</option>
+            <option value="Egypt">Egypt</option>
+            <option value="Latvia">Latvia</option>
+            <option value="Austria">Austria</option>
+            <option value="Norway">Norway</option>
+            <option value="Singapore">Singapore</option>
+            <option value="Turkey">Turkey</option>
+            <option value="Croatia">Croatia</option>
+            <option value="Russian Federation">Russian Federation</option>
+            <option value="Serbia">Serbia</option>
+            <option value="Iran, Islamic Republic of...">Iran, Islamic Republic of...</option>
+            <option value="Belgium">Belgium</option>
+            <option value="Denmark">Denmark</option>
+            <option value="China">China</option>
+            <option value="Viet Nam">Viet Nam</option>
+            <option value="Israel">Israel</option>
+            <option value="Ukraine">Ukraine</option>
+            <option value="Poland">Poland</option>
+            <option value="Romania">Romania</option>
+            <option value="South Africa">South Africa</option>
+            <option value="Greece">Greece</option>
+            <option value="Estonia">Estonia</option>
+            <option value="Ireland">Ireland</option>
+            <option value="Georgia">Georgia</option>
+            <option value="Slovenia">Slovenia</option>
+            <option value="Czech Republic">Czech Republic</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="United Arab Emirates">United Arab Emirates</option>
+            <option value="Pakistan">Pakistan</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="Hungary">Hungary</option>
+            <option value="Nigeria">Nigeria</option>
+            <option value="Japan">Japan</option>
+            <option value="Slovakia">Slovakia</option>
+            <option value="Bulgaria">Bulgaria</option>
+            <option value="Uruguay">Uruguay</option>
+            <option value="Hong Kong (S.A.R.)">Hong Kong (S.A.R.)</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Mexico">Mexico</option>
+            <option value="Colombia">Colombia</option>
+            <option value="Chile">Chile</option>
+            <option value="Indonesia">Indonesia</option>
+            <option value="South Korea">South Korea</option>
+            <option value="Philippines">Philippines</option>
+            <option value="Taiwan">Taiwan</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+        <label for="Age">Age:</label>
+        <select name="Age" required>
+            <option value="18-24 years old">18-24 years old</option>
+            <option value="25-34 years old">25-34 years old</option>
+            <option value="35-44 years old">35-44 years old</option>
+            <option value="45-54 years old">45-54 years old</option>
+            <option value="55-64 years old">55-64 years old</option>
+            <option value="65 years or older">65 years or older</option>
+            <option value="Under 18 years old">Under 18 years old</option>
+        </select><br>
+    
+        <label for="EdLevel">Education Level:</label>
+        <select name="EdLevel" required>
+            <option value="Bachelor’s degree">Bachelor’s degree</option>
+            <option value="Master’s degree">Master’s degree</option>
+            <option value="Doctoral degree">Doctoral degree</option>
+            <option value="Associate degree">Associate degree</option>
+            <option value="Non-degree">Non-degree</option>
+        </select><br>
+    
+        <label for="RemoteWork">Remote Work:</label>
+        <select name="RemoteWork" required>
+            <option value="Remote">Remote</option>
+            <option value="Hybrid">Hybrid (some remote, some in-person)</option>
+            <option value="In-person">In-person</option>
+        </select><br>
+    
+
+
+        <label for="DevType">Developer Type:</label>
+        <select name="DevType" required>
+            <option value="Senior Executive (C-Suite, VP, etc.)">Senior Executive (C-Suite, VP, etc.)</option>
+            <option value="Developer, back-end">Developer, back-end</option>
+            <option value="Developer, front-end">Developer, front-end</option>
+            <option value="Developer, full-stack">Developer, full-stack</option>
+            <option value="System administrator">System administrator</option>
+            <option value="Data scientist or machine learning specialist">Data scientist or machine learning specialist</option>
+            <option value="Data or business analyst">Data or business analyst</option>
+            <option value="Security professional">Security professional</option>
+            <option value="Research & Development role">Research & Development role</option>
+            <option value="Developer, mobile">Developer, mobile</option>
+            <option value="Developer, embedded applications or devices">Developer, embedded applications or devices</option>
+            <option value="Developer, desktop or enterprise applications">Developer, desktop or enterprise applications</option>
+            <option value="Engineer, data">Engineer, data</option>
+            <option value="Product manager">Product manager</option>
+            <option value="Academic researcher">Academic researcher</option>
+            <option value="Database administrator">Database administrator</option>
+            <option value="Developer, QA or test">Developer, QA or test</option>
+            <option value="Developer Experience">Developer Experience</option>
+            <option value="Cloud infrastructure engineer">Cloud infrastructure engineer</option>
+            <option value="DevOps specialist">DevOps specialist</option>
+            <option value="Engineering manager">Engineering manager</option>
+            <option value="Project manager">Project manager</option>
+            <option value="Blockchain">Blockchain</option>
+            <option value="Engineer, site reliability">Engineer, site reliability</option>
+            <option value="Developer, game or graphics">Developer, game or graphics</option>
+            <option value="Developer Advocate">Developer Advocate</option>
+            <option value="Hardware Engineer">Hardware Engineer</option>
+            <option value="Educator">Educator</option>
+            <option value="Scientist">Scientist</option>
+            <option value="Designer">Designer</option>
+            <option value="Other">Other</option>
+        </select><br>
+
+
+        <label for="OrgSize">Organization Size:</label>
+        <select name="OrgSize" required>
+            <option value="Small Business">Small Business</option>
+            <option value="Large Business">Large Business</option>
+            <option value="Medium Business">Medium Business</option>
+            <option value="Freelancer">Freelancer</option>
+        </select><br>
+
+
+
+        <label for="YearsCodePro">Years of Coding Professionally:</label>
+        <input type="number" name="YearsCodePro" required min="0"><br>
+
+
+        <button type="submit">Predict Salary</button>
+    </form>
+
+
+</body>
+</html>
+
+
