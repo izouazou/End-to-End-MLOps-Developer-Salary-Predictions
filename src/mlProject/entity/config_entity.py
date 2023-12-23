@@ -23,3 +23,17 @@ class DataValidationConfig:
 class DataTransformationConfig:
     root_dir: Path
     data_path: Path
+
+
+@dataclass(frozen=True)
+class ModelTrainerConfig:
+    root_dir: Path
+    train_data_path: Path
+    test_data_path: Path
+    model_name: str
+    preprocessor: str
+    depth: int
+    l2_leaf_reg: int
+    learning_rate: float
+    verbose: bool
+    target_column: str
