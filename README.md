@@ -59,16 +59,4 @@ This project is licensed under the MIT License - see the [LICENSE](https://githu
 
 
 
-MLFLOW_TRACKING_URI=https://dagshub.com/izouazou/End-to-End-MLOps-Developer-Salary-Predictions.mlflow \
-MLFLOW_TRACKING_USERNAME=izouazou \
-MLFLOW_TRACKING_PASSWORD=1e86993d474c453b78ee31877b61a93590ca1c20 \
-python script.py
 
-hh
-
-
-$env:MLFLOW_TRACKING_URI="https://dagshub.com/izouazou/End-to-End-MLOps-Developer-Salary-Predictions.mlflow"
-
-$env:MLFLOW_TRACKING_USERNAME="izouazou"
-
-$env:MLFLOW_TRACKING_PASSWORD="1e86993d474c453b78ee31877b61a93590ca1c20"
