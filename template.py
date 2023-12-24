@@ -25,11 +25,12 @@ list_of_files = [
     "main.py",
     "app.py",
     "Dockerfile",
+    ".dockerignore",
     "requirements.txt",
     "setup.py",
     "explore/00_trials.ipynb",
     "templates/index.html",
-    "static/css/styles.css",
+    "static/css/styles.css",   
 ]
 
 
