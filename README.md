@@ -50,7 +50,7 @@ With the configuration and installation steps completed, use the following comma
     python app.py
     
 
-Simply enter http:http://192.168.1.10:8080 in your browser to interact with the application.
+Simply enter http://192.168.1.10:8080 in your browser to interact with the application.
 
 
 ## License
