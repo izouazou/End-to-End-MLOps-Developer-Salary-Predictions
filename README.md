@@ -42,20 +42,20 @@ Install required packages and tools.
 
 
 
-With the configuration and installation steps completed, use the following commands to run the application:  
 
-    # For local development use, debugging mode is enabled with 'debug=True' for easy troubleshooting.
+With the configuration and installation steps completed, use the following command to run the application:  
+
+    # For local development use, enable debug mode with 'debug=True' for easy troubleshooting.
     # For production or deployment, consider removing 'debug=True' to disable debugging mode.
     
     python app.py
     
-
-Simply enter http://192.168.1.10:8080 in your browser to interact with the application.
+To initiate a comprehensive machine learning training pipeline, simply enter `http://192.168.1.10:8080/train` in your browser. This will trigger a script that serves as a conductor, orchestrating key stages including data ingestion, validation, transformation, model training, and evaluation. The script meticulously logs the initiation and completion of each stage. Once the pipeline is complete, return to `http://192.168.1.10:8080` in your browser to interact with the application.
 
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/izouazou/ToDoList/blob/main/LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/izouazou/End-to-End-MLOps-Developer-Salary-Predictions/blob/main/LICENSE) file for details.
 
 
 
