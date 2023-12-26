@@ -13,8 +13,8 @@ At the heart of our project is the Stack Overflow Annual Developer Survey 2023 d
 Our goal is to build a robust machine learning model that predicts developer salaries by leveraging the characteristics of the survey dataset. This end-to-end machine learning operations (MLOps) solution includes data preprocessing, model training, deployment, and continuous monitoring to ensure a seamless workflow for predicting and updating salary predictions.
 #### Key Features  
 
-- **Exploratory Data Analysis (EDA)**: Dive into the survey data to unearth patterns and trends, providing a comprehensive exploration of the developer community. Check EDA [Check EDA](https://github.com/izouazou/Data-Projects)
-- **Model Trainer**: Construct a robust and effective machine learning model by leveraging various features to predict developer salaries. Check Model Trainer [Check Model Trainer](https://github.com/izouazou/Data-Projects)
+- **Exploratory Data Analysis (EDA)**: Dive into the survey data to unearth patterns and trends, providing a comprehensive exploration of the developer community. [Check EDA](https://github.com/izouazou/Data-Projects)
+- **Model Trainer**: Construct a robust and effective machine learning model by leveraging various features to predict developer salaries. [Check Model Trainer](https://github.com/izouazou/Data-Projects)
 - **MLOps Implementation**: Showcase the end-to-end MLOps pipeline, from model development to deployment and monitoring.
 
 
