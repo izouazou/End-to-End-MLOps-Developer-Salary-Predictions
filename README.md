@@ -1,5 +1,21 @@
 # End-to-End-MLOps-Developer-Salary-Predictions: Setup Guide
 
+In this GitHub repository, we present a comprehensive solution for predicting developer salaries based on the Stack Overflow Annual Developer Survey 2023 dataset. The survey, conducted in May 2023, garnered responses from over 90,000 developers, providing valuable insights into their learning preferences, tool usage, and career aspirations.  
+
+### About the Dataset  
+
+At the heart of our project is the Stack Overflow Annual Developer Survey 2023 dataset, a rich source of information that captures the diverse experiences and perspectives of developers around the world. Available for exploration and analysis, the dataset provides a detailed look into the ever-evolving landscape of the developer community.  
+
+- [Download full dataset (CSV)](https://insights.stackoverflow.com/survey)
+
+### Project Overview  
+
+Our goal is to build a robust machine learning model that predicts developer salaries by leveraging the characteristics of the survey dataset. This end-to-end machine learning operations (MLOps) solution includes data preprocessing, model training, deployment, and continuous monitoring to ensure a seamless workflow for predicting and updating salary predictions.
+### Key Features  
+
+- Exploratory Data Analysis (EDA): Dive into the survey data to unearth patterns and trends, providing a comprehensive exploration of the developer community. Check EDA [Check EDA](https://github.com/izouazou/Data-Projects)
+- Model Trainer: Construct a robust and effective machine learning model by leveraging various features to predict developer salaries. Check Model Trainer [Check Model Trainer](https://github.com/izouazou/Data-Projects)
+- MLOps Implementation: Showcase the end-to-end MLOps pipeline, from model development to deployment and monitoring.
 
 
 ## Prerequisites
